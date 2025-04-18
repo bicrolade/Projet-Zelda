@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: 7e5e8d72a95e8154c8d6ac3cd7fc9b8a
+guid: 4ec5860df66de5040b404c59abc88a89
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mur1
+    second: {fileID: 2100000, guid: dbf602c295eb3a54991f97cf2bb19096, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mur2
+    second: {fileID: 2100000, guid: 6fe2a15bef73a5041bb82db9aad20731, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mur3
+    second: {fileID: 2100000, guid: c67fd78db6f1b2041a1c35be43724501, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mur4
+    second: {fileID: 2100000, guid: 888fb4d5cab8975468c39f5d96c4eaa2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
