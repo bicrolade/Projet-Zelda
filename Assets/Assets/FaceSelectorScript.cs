@@ -4,17 +4,16 @@ using UnityEngine;
 public class FaceSelectorScript : MonoBehaviour
 {
 
-    public List<GameObject> assets = new List<GameObject>();
-    public List<MeshFilter> murMesh = new List<MeshFilter>(); 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //public List<GameObject> assets = new List<GameObject>();
+    public List<Mesh> murMesh = new List<Mesh>(); 
     void Start()
     {
-        int pick = Random.Range(0, assets.Count);
-        int pickMesh = Random.Range(0, murMesh.Count);
+        //int pick = Random.Range(0, assets.Count);
+        int pickMesh = Random.Range(0, murMesh.Count+1);
         
-        Instantiate(assets[pick], this.transform.position, Quaternion.identity);
-        MeshFilter oldMesh = this.GetComponent<MeshFilter>();
-        oldMesh = murMesh[pickMesh];
+
+        //Instantiate(assets[pick], this.transform.position, Quaternion.identity);
+         this.GetComponent<MeshFilter>().mesh = murMesh[pickMesh];
 
     }
 
