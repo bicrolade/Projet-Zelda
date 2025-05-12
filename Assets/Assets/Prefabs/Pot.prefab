@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3220899233085263323}
   - component: {fileID: 4064361393899997626}
+  - component: {fileID: 6845656303996889523}
+  - component: {fileID: 6731242598571593827}
+  - component: {fileID: 5897083034146725672}
   m_Layer: 0
   m_Name: Pot
   m_TagString: Untagged
@@ -87,3 +90,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6845656303996889523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7320889705833283737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2804f4892955a3243bf76a2da339f0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startLife: 10
+  maxLife: 10
+  currentLife: 10
+  onDamageTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  displayDebugInfo: 0
+  invincibilityDuration: 0.25
+  animator: {fileID: 0}
+  hitParameterName: Hit
+--- !u!114 &6731242598571593827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7320889705833283737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb3debe331fe064e98b57a80423ea4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 463100984465761773, guid: 9f6884e23129a81439d564a92d09a454, type: 3}
+  spawnInsideSameParent: 1
+--- !u!65 &5897083034146725672
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7320889705833283737}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3, y: 0.30000007, z: 0.20000005}
+  m_Center: {x: 0, y: 0, z: 0}
